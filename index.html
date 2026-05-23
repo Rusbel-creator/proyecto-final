@@ -1,47 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Jose Racing</title>
     <link rel="stylesheet" href="/frontend/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
+
     <header>
-        <img src="" alt="Taller Jose Racing">
-        <nav>
-            <ul>
-                <li><a href="/frontend/index.html">INICIO</a></li>
-                <li><a href="/frontend/pages/about.html">NOSOTROS</a></li>
-                <li><a href="/frontend/pages/gallery.html">GALERÍA</a></li>
-                <li><a href="/frontend/pages/blog.html">BLOG</a></li>
-                <li><a href="/frontend/pages/contact.html">CONTACTO</a></li>
-                <button><i class="fa-brands fa-whatsapp"></i>ESCRÍBENOS</button>
+        <img src="/frontend/assets/icons/logo.png" alt="Logo-Taller-Jose-Racing">
+        <nav class="menu">
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="/frontend/index.html" class="menu__link menu__link--hover">INICIO</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/frontend/pages/about.html" class="menu__link">NOSOTROS</a>
+                </li>
+                <li class="menu__item menu__item--show">
+                    <p class="menu__link">SERVICIOS <i class='bx bx-chevron-down menu__arrow'></i></p>
+
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="/frontend/pages/services.html" class="menu__link menu__link--inside">SERVICIOS</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/frontend/pages/productos.html" class="menu__link menu__link--inside">PRODUCTOS</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="/frontend/pages/contact.html" class="menu__link">CONTACTO</a>
+                </li>
+                <button class="menu__button">
+                    <i class="fa-brands fa-whatsapp"></i> ESCRÍBENOS
+                </button>
             </ul>
         </nav>
-
-
     </header>
-
     <main>
-
         <section>
             <div class="slider">
                 <div class="slides">
-                    <img src="/frontend/assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen 1">
-                    <img src="/frontend/assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen 2">
-                    <img src="/frontend/assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen 3">
+                    <div class="slide">
+                        <img src=" assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-1">
+                        <div class="contenido">
+                            <h1>
+                                <span class="taller">TALLER</span>
+                                <span class="nombre">José Racing</span>
+                            </h1>
+                            <p>Reparaciones profesionales</p>
+                            <button>Contáctanos</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-2">
+                        <div class="contenido">
+                            <h2>Servicio rápido</h2>
+                            <p>Calidad garantizada</p>
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-3">
+                        <div class="contenido">
+                            <h2>Equipo experto</h2>
+                            <p>Confianza total</p>
+                            <button>Agenda cita</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <button class="next">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="nosotros">
+            <div class="texto">
+                <h3 class="nosotros1">Sobre nosotros</h3>
+                <h2 class="nosotros2">Pasión por las pasolas, compromiso contigo</h2>
+                <p>Nos dedicamos a ofrecer servicios de reparación y mantenimiento con calidad, responsabilidad y confianza para que siempre estés seguro en la vía.</p>
+                <button class="btn-nosotros">Conoce más sobre nosotros →</button>
+            </div>
+            <div class="imagen">
+                <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-nosotros-promocional" >
+            </div>
+        </section>
+
+        <section class="servicios">
+            <div class="servicios-texto">
+                <h3 class="servicios-sub">Servicios</h3>
+                <h2 class="servicios-titulo">Soluciones completas para tu pasola</h2>
+                <p class="servicios-desc">Ofrecemos una amplia gama de servicios para mantener tu pasola en perfecto estado, garantizando seguridad, rendimiento y confianza.</p>
+                <button class="btn-servicios">Ver todos los servicios →</button>
+            </div>
+            <div class="servicios-cards">
+                <div class="card">
+                    <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-1-promocional">
+                    <h4>Reparación</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-2-promocional">
+                    <h4>Mantenimiento</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-3-promocional">
+                    <h4>Diagnóstico</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-4-promocional">
+                    <h4>Piezas</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda</p>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <footer>
+        <div class="footer">
+            <div class="footer__description">
+                <img src="/frontend/assets/icons/logo.png" alt="Logo-Taller-Jose-Racing">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum doloremque tempore ullam</p>
+                <div class="redes-sociales">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="quick__links">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li>
+                        <a href="/frontend/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/frontend/pages/about.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/frontend/pages/services.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="/frontend/pages/productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="/frontend/pages/gallery.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="/frontend/pages/blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/frontend/pages/contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="footer__services">
+                <h3>Servicios</h3>
+                <ul>
+                    <li>
+                        <a href="#">Diagnóstico computarizado</a>
+                    </li>
+                    <li>
+                        <a href="#">Frenos</a>
+                    </li>
+                    <li>
+                        <a href="#">Suspensión</a>
+                    </li>
+                    <li>
+                        <a href="#">Cambio de aceite</a>
+                    </li>
+                    <li>
+                        <a href="#">Mantenimiento preventivo</a>
+                    </li>
+                    <li>
+                        <a href="#">Y más...</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="footer__contact">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-map-marker-alt"></i> Av. Principal #123, Santo Domingo, RD</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (123) 456-7890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@tallerjoseracing.com</p>
+                <p><i class="fa-regular fa-clock"></i> Lun - Vie: 8:00 AM - 6:00 PM<br>Sáb: 8:00 AM - 1:00 PM</p>
+                <button><i class="fa-brands fa-whatsapp"></i> ESCRÍBENOS POR WHATSAPP</button>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 Taller Jose Racing. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
