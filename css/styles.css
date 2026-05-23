@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0B0B0D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+nav ul button {
+    background-color:#E50914;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+nav ul button i {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: mover 10s infinite;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+
+@keyframes mover {
+    0% { transform: translateX(0%); }
+    30% { transform: translateX(0%); }
+
+    35% { transform: translateX(-100%); }
+    65% { transform: translateX(-100%); }
+
+    70% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
