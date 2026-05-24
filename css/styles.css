@@ -169,18 +169,6 @@ header img {
     cursor: pointer;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-}
-
 .taller {
     color: red;
     font-size: 4rem;
@@ -191,15 +179,6 @@ header img {
 .nombre {
     font-size: 4rem;
     color: white;
-}
-
-.prev {
-    left: 10px;
-    border-radius: 8px;
-}
-.next {
-    right: 10px;
-    border-radius: 8px;
 }
 
 .nosotros {
@@ -326,7 +305,166 @@ color: #E50914;
 
 /* About Styles */
 .about-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.about-slide img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.about-slide h1 {
+    font-size: 18px;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.about-slide h2 {
+    font-size: 2.6rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.about-slide span {
+    color: red;
+}
+
+.decoration-line {
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.about-slide p {
+    color: #CFCFCF;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.about-slide button {
+    width: max-content;
+    border: 2px solid #E50914;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.about-slide .contenido-about {
+    position: absolute;
+    width: 30%;
+    top: 35%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+}
+
+.promotion {
+    width: max-content;
+    background-color: #0B0B0D;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    color: white;
+}
+
+.promotion {
+    position: absolute;
+    top:70%;
+    left: 10%;
+}
+
+.promotion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.promotion-item {
+    display: flex;
+    padding: 0;
+    gap: 12px;
+    margin: 0;
+    align-items: center;
+}
+
+.promotion-item p {
+    color: #CFCFCF;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.promotion .promotion-container .promotion-item i {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: red;
+    padding: 0;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.promotion-item p:first-child {
+    font-size: 24px;
+    color: #fff;
+}
+
+.information {
+    display: flex;
+}
+
+.information .datas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.information .datas h2 {
+    font-size: 15px;
+    color: red;
+}
+
+.information .datas h3 {
+    font-size: 2.6rem;
+}
+
+.information .datas span {
+    color: red;
+}
+
+.information .datas p {
+    color: #2A2A2A;
+    font-size: 14px;
+}
+
+.information .info-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.information .info-images img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.information .info-images img:first-child {
+    grid-column: auto / span 2;
 }
 
 /* Contact Styles */
@@ -457,6 +595,122 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
+/*Productos*/
+
+.container{
+  display:flex;
+  gap:30px;
+  padding:40px 10%;
+}
+
+
+.sidebar{
+  width:220px;
+}
+
+.sidebar h3{
+  margin-bottom:15px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar li{
+  padding:10px;
+  border-bottom:1px solid #2A2A2A;
+  cursor:pointer;
+  color:#ccc;
+}
+
+.sidebar li:hover{
+  color:red;
+}
+
+
+.content{
+  flex:1;
+}
+
+
+.promo{
+  background:#121212;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+  display:flex;
+  flex-direction:column;
+  gap: 15px;
+}
+
+.promo h2{
+  color:red;
+}
+
+.promo button{
+  background:red;
+  color:white;
+  border:none;
+  padding:8px 15px;
+  cursor:pointer;
+width: max-content;
+}
+
+.promo p{
+color:beige
+}
+
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:20px;
+}
+
+.card{
+  background:#121212;
+  border-radius:10px;
+  padding:10px;
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+}
+
+.card h4{
+  margin:10px 0;
+}
+
+.card p{
+  color:#ccc;
+}
+
+.card button{
+  background:red;
+  color:white;
+  border:none;
+  padding:8px;
+  width:100%;
+  cursor:pointer;
+}
+
+
+.buscador{
+  width: 250px;
+  padding: 8px 12px;
+  background: #121212;
+  border: 1px solid #2A2A2A;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+
 
 /* Footer Styles */
 
