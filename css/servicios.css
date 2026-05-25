@@ -1,0 +1,12 @@
+body {
+    background-color: #0B0B0D;
+}
+
+.services-container-wrapper {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}

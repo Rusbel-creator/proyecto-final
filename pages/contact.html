@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Jose Racing - Contactos</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/icons/logo.png" type="icon/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -46,7 +47,7 @@
     <div class="Contact-section-complete">
         <section class="Contact-hero">
             <div class="contact-slide slide">
-                <img src="/assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-1">
+                <img src="/assets/images/imagen.jpeg" alt="Imagen-1">
                 <div class="contenido">
                     <h1>Contacto</h1>
                     <h2>Más que un taller,<br><span>somos tu aliado.</span></h2>
@@ -55,66 +56,14 @@
                 </div>
             </div>
         </section>
-        <div class="formulario">
-
-  <h2 class="titulo-seccion">Agenda tu cita</h2>
-
-  <form>
-
-
-    <div class="fila">
-      <input type="text" placeholder="Nombre completo">
-      <input type="tel" placeholder="Teléfono">
-    </div>
-
-
-    <div class="fila">
-      <input type="email" placeholder="Correo electrónico">
-    </div>
-
-
-    <div class="fila">
-      <select>
-        <option>Tipo de servicio</option>
-        <option>Reparación</option>
-        <option>Mantenimiento</option>
-        <option>Diagnóstico</option>
-      </select>
-
-      <input type="text" placeholder="Modelo de pasola">
-    </div>
-
-
-    <div class="fila">
-      <input type="date">
-      <input type="time">
-    </div>
-
-
-    <textarea placeholder="Describe el problema"></textarea>
-
-
-    <button type="submit">
-      Agendar cita →
-    </button>
-
-  </form>
-
-</div>
-
-    </div>
-
-
-
-
-<div class="info">
+<section class="info">
 
 
   <div class="contacto-items">
 
-  <h3 class="item">Contáctanos</h3>
+  <h2 class="item">Contáctanos</h2>
 
-    <h2 class="item">Estamos listos para ayudarte</h2>
+    <h3 class="item">Estamos listos para ayudarte</h3>
     <div class="item">
       <i class="fa-solid fa-phone"></i>
       <div>
@@ -133,12 +82,11 @@
 
 
     <div class="item">
-      <i class="fa-solid fa-map-marker-alt"></i>
-      <div>
+    <i class="fa-solid fa-map-marker-alt"></i>
+    <div>
         <h4>Ubicación</h4>
-        <p>Av.Principal #123 ,Villa Azucarera <br>
-              San pedro de macoris, R.D</p>
-      </div>
+        <p>Av.Principal #123 ,Villa Azucarera San pedro de macoris, R.D</p>
+    </div>
     </div>
 
     <div class="item">
@@ -153,10 +101,73 @@
 
 
 <div class="mapa">
-  <img src="/assets/images/48fd9010-c1c1-11ee-9519-97453607d43e.jpg.webp" alt="Imagen-1" >
+  <iframe
+    src="https://www.google.com/maps?q=Repuesto+y+Taller+Jose+Racing+San+Pedro+de+Macoris&output=embed"
+    loading="lazy">
+  </iframe>
 </div>
 
+
+</section>
+
+
+    </div>
+
+    <section class="form-section">
+        <div class="formulario">
+
+  <h2 class="titulo-seccion">AGENDA TU CITA</h2>
+
+  <form action="https://formsubmit.co/rusbeldelarosa152@gmail.com" method="POST">
+
+
+    <div class="fila">
+      <input type="text" name="Nombre" required placeholder="Nombre completo">
+      <input type="tel" name="Teléfono" required placeholder="Teléfono">
+    </div>
+
+
+    <div class="fila">
+      <input type="email" name="Email" required placeholder="Correo electrónico">
+    </div>
+
+
+    <div class="fila">
+      <select required name="Tipo de servicio">
+        <option>Tipo de servicio</option>
+        <option>Reparación</option>
+        <option>Mantenimiento</option>
+        <option>Canvio de pieza</option>
+      </select>
+
+      <input type="text" name="Modelo" required placeholder="Modelo de pasola">
+    </div>
+
+
+    <div class="fila">
+      <input type="date" name="Fecha" required>
+      <input type="time" name="Hora" required>
+    </div>
+
+
+    <textarea name="Descripción del problema" required placeholder="Describe el problema"></textarea>
+
+
+    <button type="submit">
+      Agendar cita →
+    </button>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contact.html">
+
+  </form>
+
 </div>
+    </section>
+
+
+
+
 
 
 
@@ -251,5 +262,6 @@
         </div>
     </footer>
 
+    <script src="/JS/main.js"></script>
 </body>
 </head>
